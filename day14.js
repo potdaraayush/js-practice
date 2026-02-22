@@ -14,3 +14,11 @@ greet("yush");
 greet();
 
 // q3
+const firstName = "Alice";
+const newAge = 22;
+
+const person = {
+    firstName, newAge
+};
+
+console.log(person.firstName, person.newAge);
