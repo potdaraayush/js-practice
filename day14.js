@@ -1,5 +1,6 @@
 // q5
 import {add, PI} from './mathUtils.js';
+import sub from "./mathUtils.js";
 
 // q1
 const name = "alice";
@@ -36,3 +37,5 @@ display({name: "yush"});
 
 // q5
 console.log(add(3, 5)+PI);
+console.log(sub(6, 7));
+
