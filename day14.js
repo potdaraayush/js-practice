@@ -1,3 +1,6 @@
+// q5
+import {add, PI} from './mathUtils.js';
+
 // q1
 const name = "alice";
 const age = 24;
@@ -30,3 +33,6 @@ function display({name, city = "unknown"}) {
 }
 
 display({name: "yush"});
+
+// q5
+console.log(add(3, 5)+PI);
