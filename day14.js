@@ -22,3 +22,11 @@ const person = {
 };
 
 console.log(person.firstName, person.newAge);
+
+
+// q4
+function display({name, city = "unknown"}) {
+    console.log(`${name} lives in ${city}`);
+}
+
+display({name: "yush"});
