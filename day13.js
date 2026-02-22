@@ -34,3 +34,5 @@ const obj = {
 }
 
 obj.greet();
+// logs undefined cause arrow functions dont have a this.
+// this uses the value of its previous lexical environment
