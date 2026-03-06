@@ -19,3 +19,44 @@ const newUser = {...user, age: user.age+1}
 // console.log(newUser);
 
 // q3. higher order functions
+function operate(a, b, operation) {
+    return operation(a, b);
+}
+
+function operation(x, y) {
+    return x+y;
+}
+
+// console.log(operate(5, 4, operation));
+
+// q4. currying
+function multiply(a, b) {
+    return a*b;
+}
+
+function curriedMultiplication(a) {
+    return function(b) {
+        return a*b;
+    }
+}
+
+// console.log(curriedMultiplication(5)(2));
+
+// q5.
+function double(x) {
+    return x*2;
+}
+
+function square(x) {
+    return x*x;
+}
+
+function compose(double, square) {
+    return function(x) {
+        return double(square(x));
+    }
+}
+
+const res = compose(double, square);
+console.log(res(6));
+
